@@ -1,0 +1,14 @@
+[theme]
+base="dark"  # You can set this to "light" or "dark" depending on your preference.
+
+[server]
+enableXsrfProtection=false
+
+[browser]
+gatherUsageStats = false
+
+[global]
+showWarningOnDirectExecution = false
+
+[ui]
+hideToolbar = true
