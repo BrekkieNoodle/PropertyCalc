@@ -76,8 +76,7 @@ def calculate_investment_outlook(params):
         strata_fees * (1 + annual_expense_increase) ** years +
         insurance * (1 + annual_expense_increase) ** years +
         property_manager_fees +
-        repairs_and_maintenance +
-        depreciation
+        repairs_and_maintenance
     )
     
     net_rental_loss = annual_rental_income_array - total_annual_expenses
@@ -94,7 +93,7 @@ def calculate_investment_outlook(params):
         'Rental Income': annual_rental_income_array,
         'Interest Payment': annual_interest,
         'Principal Payment': annual_principal,
-        'Total Expenses + Depreciation': total_annual_expenses,
+        'Total Expenses': total_annual_expenses,
         'Net Rental Loss': net_rental_loss,
         'Tax Benefit': tax_benefit,
         'Cashflow after Negative Gearing': net_profit_loss_after_tax,
