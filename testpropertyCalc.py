@@ -230,4 +230,30 @@ if st.button('Run Calculations'):
         file_name="investment_outlook.xlsx",
         mime="application/vnd.ms-excel"
     )
-#
+# Information Section to explain columns
+with st.expander("Explanation of Columns"):
+    st.markdown("""
+    **1. Year**: The year number in the investment period.
+    
+    **2. Rental Income**: The total annual rental income from the property, accounting for any annual rental increase.
+    
+    **3. Interest Payment**: The portion of the mortgage payment that goes towards paying the interest on the loan.
+    
+    **4. Principal Payment**: The portion of the mortgage payment that goes towards paying down the loan principal.
+    
+    **5. Other Expenses**: Includes expenses such as council rates, water rates, strata fees, insurance, property management fees, and repairs/maintenance.
+    
+    **6. Total Cash Outflows**: The sum of interest payments, principal repayments, and other expenses.
+    
+    **7. Net Cash Flow Before Tax**: Rental income minus total cash outflows, showing the net income before taxes.
+    
+    **8. Taxable Income**: Rental income minus interest, other expenses, and depreciation, used to calculate your tax liability.
+    
+    **9. Tax Benefit**: The reduction (or increase) in tax due to the taxable income, based on your marginal tax rate.
+    
+    **10. Net Cash Flow After Tax**: The net cash flow after accounting for the tax benefit or liability.
+    
+    **11. Capital Gains**: The annual increase in property value due to appreciation.
+    
+    **12. Final Net Gain/Loss**: The total gain or loss, combining the net cash flow after tax and the capital gains.
+    """)
