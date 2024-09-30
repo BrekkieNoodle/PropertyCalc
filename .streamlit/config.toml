@@ -1,5 +1,5 @@
 [theme]
-base="dark"  # You can set this to "light" or "dark" depending on your preference.
+base="dark"
 
 [server]
 enableXsrfProtection=false
